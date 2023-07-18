@@ -4,20 +4,16 @@
 //
 //  Created by Scholar on 7/18/23.
 //
-
+//he4lloooooooo
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
-}
+            Color("NewTan")
+                .ignoresSafeArea()
+        }//vstck
+    }}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
