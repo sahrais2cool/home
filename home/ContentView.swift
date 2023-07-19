@@ -33,8 +33,9 @@ struct ContentView: View {
                     
                     Spacer() // Push the above HStack to the top
 
-                    
-                    
+                    Image("title")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
                     Image("Sunny")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
