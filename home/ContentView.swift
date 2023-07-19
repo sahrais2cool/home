@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+       
+        
         NavigationStack {
             ZStack {
                 Color("NewTan")
@@ -26,11 +28,21 @@ struct ContentView: View {
                         .padding(.leading, 80) // Add padding to the left side
                         Spacer() // Push the link to the left side
                         
+     
                     }//hstack
                     
                     Spacer() // Push the above HStack to the top
+
                     
                     
+                    Image("Sunny")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .padding(.top, 8.0)
+                        .frame(width:350,height:350)
+                   
+                        
+                  
                     
                     NavigationLink(destination: FashionReport()){
                         Text("Fashion Report")
@@ -42,8 +54,9 @@ struct ContentView: View {
                             
                     }
                     .buttonStyle(.borderedProminent)
+                    .padding(.top, 60.0)
                     .tint(Color("DarkBlue"))
-                    .frame(width:500, height:600)
+                    .frame(width:500, height:100)
                     
                     Spacer() // Provide space at the bottom
                     
@@ -52,9 +65,9 @@ struct ContentView: View {
                         .foregroundColor(Color("DarkBlue"))
                
 
-                }
-            }
-        }
+                }//vstack
+            }//zstack
+        }//navstack
     }
 }
 
